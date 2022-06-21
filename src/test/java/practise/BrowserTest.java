@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.json.JsonOutput;
 
 
 import static org.junit.Assert.assertEquals;
@@ -33,6 +34,11 @@ public class BrowserTest {
                 "Google", driver.getTitle());
         assertEquals("URL is incorrect",
                 GOOGLE_URL, driver.getCurrentUrl());
+        assertEquals("Website has different title",
+                "Google", driver.getTitle());
+        assertEquals("URL is incorrect",
+                GOOGLE_URL, driver.getCurrentUrl());
     }
+    //Delete me in next commit
 }
 
